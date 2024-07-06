@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout1 {
+            margin-left: 25%;
+            width: 500px;
+            height: 450px;
+        }
+
+        .row1 {
+            width: 100%;
+            height: 100px;
+            background-color: navy;
+        }
+
+        .row2 {
+            display: flex;
+        }
+
+        .row3 {
+            display: flex;
+        }
+
+        .card {
+            width: 50%;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        #c1 {
+            background-color: aqua;
+        }
+
+        #c2 {
+            background-color: blue;
+        }
+
+        #c3 {
+            background-color: yellow;
+        }
+
+        #c4 {
+            background-color: violet;
+        }
+
+        #c5 {
+            background-color: red;
+        }
+
+        .layout2 {
+            margin-left: 25%;
+            margin-top: 10%;
+            width: 500px;
+            height: 450px;
+        }
+
+        .layout2 .row1 {
+            width: 100%;
+            height: 100px;
+        }
+
+        .layout2 .row3 .card {
+            width: 100%;
+            height: 100px;
+        }
+
+        .layout3 {
+            margin-left: 25%;
+            width: 500px;
+            height: 450px;
+        }
+
+        .layout3 .row1 {
+            width: 94%;
+            height: 100px;
+            background-color: navy;
+            margin-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        .layout3 .row2 {
+            display: flex;
+
+        }
+
+        .layout3 .row3 {
+            display: flex;
+        }
+
+        .layout3 .card {
+            width: 50%;
+            height: 200px;
+            background-color: aqua;
+            margin: 15px 15px;
+        }
+
+        .layout4 {
+            margin-top: 15%;
+            margin-bottom: 15%;
+            margin-left: 25%;
+            width: 500px;
+            height: 450px;
+        }
+
+        .layout4 .row1 {
+            width: 100%;
+            height: 100px;
+            background-color: navy;
+        }
+
+        .layout4 .col1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .layout4 .col1 .card1 {
+            width: 250px;
+            height: 225px;
+            background-color: aqua;
+        }
+
+        .layout4 .col1 .card2 {
+            width: 250px;
+            height: 225px;
+            background-color: yellow;
+        }
+        .layout4 .row2{
+            display: flex;
+        }
+        .layout4 .col2 {
+            width: 50%;
+            height: 450px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout1">
+        <div class="row1"></div>
+        <div class="row2">
+            <div class="card" id="c1"></div>
+            <div class="card" id="c2"></div>
+        </div>
+        <div class="row3">
+            <div class="card" id="c3"></div>
+            <div class="card" id="c4"></div>
+        </div>
+    </div>
+
+    <div class="layout2">
+        <div class="row1"></div>
+        <div class="row2">
+            <div class="card" id="c4"></div>
+            <div class="card" id="c5"></div>
+        </div>
+        <div class="row3">
+            <div class="card" id="c6"></div>
+        </div>
+    </div>
+
+    <div class="layout3">
+        <div class="row1"></div>
+        <div class="row2">
+            <div class="card" id="c1"></div>
+            <div class="card" id="c2"></div>
+        </div>
+        <div class="row3">
+            <div class="card" id="c3"></div>
+            <div class="card" id="c4"></div>
+        </div>
+    </div>
+
+    <div class="layout4">
+        <div class="row1"></div>
+        <div class="row2">
+            <div class="col1">
+                <div class="card1"></div>
+                <div class="card2"></div>
+            </div>
+            <div class="col2"></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
